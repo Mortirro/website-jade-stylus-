@@ -1,0 +1,429 @@
+doctype html
+html(lang="en")
+  
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title Anna Hruch
+    link(rel="shortcut icon" href="images/website_icon.png" type="image/png")
+    link (href="css/bootstrap.css" rel="stylesheet")
+    //normalize
+    link(rel="stylesheet" href="css/normalize_4_1_1.css")
+    link(rel="stylesheet" href="css/style.css")
+    link(rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen")
+    link(rel="stylesheet" href="css/jquery.arcticmodal-0.3.css")
+    link(href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet")
+  
+  body
+    //header
+    header.header
+     .header__menu
+        nav.main-menu
+          .main-menu__toggle.menu__btn #menu-trigger
+            span.menu__burger
+            span.menu__exit
+         ul.main-menu__list
+            li.main-menu__list-item
+              a.main-menu__link(href="#gallery") Галерея
+            li.main-menu__list-item
+              a.main-menu__link(href="#services") Услуги
+            li.main-menu__list-item
+              a.main-menu__link(href="#about") Обо мне
+              .header__feedback
+                span.header__feedback-label Анна
+                a.header__feedback-tel(href="tel:+380662032523") +38 (066) 203-25-23
+    //promo
+    .promo
+      .promo__image-container          
+        img.promo__image-mask(src="images/promo-mask.svg" alt="")
+        
+        //gallery
+    //gallery
+    .ancor #gallery
+    .container.gallery
+      .wrap
+        h1.allery__title Галерея
+          
+          .gallery__list
+          .gallery__list-item.col-sm-3.col-xs-6
+            .gallery__image-box
+              a(data-toggle="modal" href="#gallery1" data-toggle="modal" data-target="#gallery1")
+                img.gallery__image (src="images/gallery/nakrutki.jpg" alt="Накрутки")
+            h2.gallery__subtitle Накрутки
+            
+          .gallery__list
+          .gallery__list-item.col-sm-3.col-xs-6
+            .gallery__image-box
+              a(data-toggle="modal" href="#gallery2" data-toggle="modal" data-target="#gallery2")
+                img.gallery__image(src="images/gallery/bukli.jpg" alt="Накрутки")
+            h2.gallery__subtitle Букли
+        
+         .gallery__list
+         .gallery__list-item.col-sm-3.col-xs-6
+           .gallery__image-box
+              a(data-toggle="modal" href="#gallery3" data-toggle="modal" data-target="#gallery3")
+                img.gallery__image(src="images/gallery/pletenya.jpg" alt="Накрутки")
+            h2.gallery__subtitle Плетения
+          
+          .gallery__list
+          .gallery__list-item.col-sm-3.col-xs-6
+            .gallery__image-box
+              a(data-toggle="modal" href="#gallery4" data-toggle="modal" data-target="#gallery4")
+                img.gallery__image(src="images/gallery/deti.jpg" alt="Накрутки")
+            h2.gallery__subtitle Детские
+            
+    //Library gallerys    
+    .modal#gallery1(tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true")
+      .modal-dialog.modal-lg
+        .modal-content
+        .modal-header
+          button(type="button" class="close" data-dismiss="modal" aria-hidden="true" &times;)
+          h2.modal-title #myModalLabel Накрутки
+        .modal-body
+          .fotorama(data-ratio="700/700" data-width="100%" data-nav="thumbs" data-click="true" data-loop="true" data-keyboard='{"space": true, "home": true, "end": true, "up": true, "down":true}')
+            a(href="images/bukli_big.jpg")
+              img(src="images/bukli_small.jpg" width="30" height="30")
+            a(href="images/bukli_big.jpg")
+              img(src="images/bukli_small.jpg" width="30" height="30")
+            a(href="images/bukli_big.jpg")
+              img(src="images/bukli_small.jpg" width="30" height="30")
+            a(href="images/bukli_big.jpg")
+              img(src="images/bukli_small.jpg" width="30" height="30")
+            a(href="images/bukli_big.jpg")
+              img(src="images/bukli_small.jpg" width="30" height="30")
+            a(href="images/bukli_big.jpg")
+              img(src="images/bukli_small.jpg" width="30" height="30")
+            a(href="images/bukli_big.jpg")
+              img(src="images/bukli_small.jpg" width="30" height="30")
+            a(href="images/bukli_big.jpg")
+              img(src="images/bukli_small.jpg" width="30" height="30")
+            a(href="images/bukli_big.jpg")
+              img(src="images/bukli_small.jpg" width="30" height="30")
+            a(href="images/bukli_big.jpg")
+              img(src="images/bukli_small.jpg" width="30" height="30")
+        .modal-footer
+    .modal#gallery2(tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true")
+      .modal-dialog.modal-lg
+        .modal-content
+        .modal-header        
+          button(type="button" class="close" data-dismiss="modal" aria-hidden="true" &times;)
+          h2.modal-title #myModalLabel Букли
+        .modal-body
+          .fotorama(data-ratio="700/700" data-width="100%" data-nav="thumbs" data-click="true" data-loop="true" data-keyboard='{"space": true, "home": true, "end": true, "up": true, "down":true}')
+            a(href="images/bukli_big.jpg")
+              img(src="images/bukli_small.jpg" width="30" height="30")
+            a(href="images/bukli_big.jpg")
+              img(src="images/bukli_small.jpg" width="30" height="30")
+            a(href="images/bukli_big.jpg")
+              img(src="images/bukli_small.jpg" width="30" height="30")
+            a(href="images/bukli_big.jpg")
+              img(src="images/bukli_small.jpg" width="30" height="30")
+            a(href="images/bukli_big.jpg")
+              img(src="images/bukli_small.jpg" width="30" height="30")
+            a(href="images/bukli_big.jpg")
+              img(src="images/bukli_small.jpg" width="30" height="30")
+            a(href="images/bukli_big.jpg")
+              img(src="images/bukli_small.jpg" width="30" height="30")
+            a(href="images/bukli_big.jpg")
+              img(src="images/bukli_small.jpg" width="30" height="30")
+            a(href="images/bukli_big.jpg")
+              img(src="images/bukli_small.jpg" width="30" height="30")
+            a(href="images/bukli_big.jpg")
+              img(src="images/bukli_small.jpg" width="30" height="30")
+        .modal-footer
+    .modal#gallery3(tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true")
+      .modal-dialog.modal-lg
+        .modal-content
+          .modal-header
+            button(type="button" class="close" data-dismiss="modal" aria-hidden="true" &times)
+            h2.modal-title #myModalLabel Плетения
+          .modal-body
+            .fotorama(data-ratio="700/700" data-width="100%" data-nav="thumbs" data-click="true" data-loop="true" data-keyboard='{"space": true, "home": true, "end": true, "up": true, "down":true}')
+              a(href="images/bukli_big.jpg")
+                img src="images/bukli_small.jpg" width="30" height="30")
+              a(href="images/bukli_big.jpg")
+                img src="images/bukli_small.jpg" width="30" height="30")
+              a(href="images/bukli_big.jpg")
+                img src="images/bukli_small.jpg" width="30" height="30")
+              a(href="images/bukli_big.jpg")
+                img src="images/bukli_small.jpg" width="30" height="30")
+              a(href="images/bukli_big.jpg")
+                img src="images/bukli_small.jpg" width="30" height="30")
+              a(href="images/bukli_big.jpg")
+                img src="images/bukli_small.jpg" width="30" height="30")
+              a(href="images/bukli_big.jpg")
+                img src="images/bukli_small.jpg" width="30" height="30")
+              a(href="images/bukli_big.jpg")
+                img src="images/bukli_small.jpg" width="30" height="30")
+              a(href="images/bukli_big.jpg")
+                img src="images/bukli_small.jpg" width="30" height="30")
+              a(href="images/bukli_big.jpg")
+                img src="images/bukli_small.jpg" width="30" height="30")          
+          .modal-footer    
+    .modal#gallery4(tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true")
+      .modal-dialog.modal-lg
+        .modal-content
+          .modal-header
+            button(type="button" class="close" data-dismiss="modal" aria-hidden="true" &times)
+            h2.modal-title #myModalLabel Детские
+          .modal-body
+            fotorama(data-ratio="700/700" data-max-width="100%" data-nav="thumbs" data-click="true" data-loop="true" data-keyboard='{"space": true, "home": true, "end": true, "up": true, "down":true}')
+              a(href="images/bukli_big.jpg")
+                img(src="images/bukli_small.jpg" width="30" height="30")
+              a(href="images/bukli_big.jpg")
+                img(src="images/bukli_small.jpg" width="30" height="30")
+              a(href="images/bukli_big.jpg")
+                img(src="images/bukli_small.jpg" width="30" height="30")
+              a(href="images/bukli_big.jpg")
+                img(src="images/bukli_small.jpg" width="30" height="30")
+              a(href="images/bukli_big.jpg")
+                img(src="images/bukli_small.jpg" width="30" height="30")
+              a(href="images/bukli_big.jpg")
+                img(src="images/bukli_small.jpg" width="30" height="30")
+              a(href="images/bukli_big.jpg")
+                img(src="images/bukli_small.jpg" width="30" height="30")
+              a(href="images/bukli_big.jpg")
+                img(src="images/bukli_small.jpg" width="30" height="30")
+              a(href="images/bukli_big.jpg")
+                img(src="images/bukli_small.jpg" width="30" height="30")
+              a(href="images/bukli_big.jpg")
+                img(src="images/bukli_small.jpg" width="30" height="30")
+            .modal-footer
+              
+    // services        
+    .ancor #services      
+    .services
+      .container.wrap
+        .services__title
+          span.services__title-inner Услуги            
+            .services__items.row
+              .services__items-after
+                .services__item
+                  .services__image-box.col-sm-4.col-xs-6
+                    .services__image-container
+                      img.services__image(src="images/servises/services__image_trial_makeup.jpg" alt="")
+                        .services__image-shadow
+                          .services__image-shadow__part1
+                          .services__image-shadow__part2
+                          .services__image-shadow__part4
+                          .services__image-shadow__part3                      
+                        .services__item-container
+                          span.services__item-container__inner
+                            .services__item-content
+                              span.services__item-label Пробная
+                              br
+                              span.services__item-title Прическа
+                              br
+                              span.services__item-price 250-350 грн.
+                          
+                  .services__image-box.col-sm-4.col-xs-6
+                    .services__image-container
+                      img.services__image(src="images/servises/services__image_makeup_test.jpg" alt="")
+                      .services__image-shadow
+                        .services__image-shadow__part4
+                        .services__image-shadow__part2
+                        .services__image-shadow__part4
+                        .services__image-shadow__part3  
+                      .services__item-container
+                        span.services__item-container__inner
+                          span.services__item-content
+                            span.services__item-label Пробный
+                            br
+                            span.services__item-title Макияж 
+                            br
+                            span.services__item-price 150 грн.
+              
+                  .services__image-box.col-sm-4.col-xs-6
+                    .services__image-container
+                      img.services__image(src="images/servises/services__image_laying_2.jpg" alt="")
+                        .services__image-shadow
+                          .services__image-shadow__part3"></div>
+                          .services__image-shadow__part4"></div>
+                          .services__image-shadow__part2"></div>
+                          .services__image-shadow__part1"></div>                         
+                        .services__item-container
+                          span.services__item-container__inner
+                            span.services__item-content
+                              span.services__item-label
+                              br
+                              span.services__item-titlebУкладка
+                              br
+                              span.services__item-price 150 грн.
+                    
+                  .services__image-box.col-sm-4.col-xs-6
+                    .services__image-container
+                      img.services__image(src="images/servises/services__image_makeup.jpg" alt="")
+                        .services__image-shadow
+                          .services__image-shadow__part3
+                          .services__image-shadow__part4
+                          .services__image-shadow__part1
+                          .services__image-shadow__part2                         
+                        .services__item-container
+                          span.services__item-container__inner
+                            span.services__item-content">
+                              span.services__item-label
+                              br
+                              span.services__item-title Прическа
+                              br
+                              span.services__item-price 300-700 грн.
+                  
+                  .services__image-box.col-sm-4.col-xs-6
+                    .services__image-container
+                      img .services__image(src="images/servises/services__image_hairstyle.jpg" alt="")
+                        .services__image-shadow
+                          .services__image-shadow__part1
+                          .services__image-shadow__part2
+                          .services__image-shadow__part4
+                          .services__image-shadow__part3                        
+                        .services__item-container
+                          span.services__item-container__inner
+                            span.services__item-content
+                              span.services__item-label
+                              br
+                              span.services__item-title Макияж
+                              br
+                              span.services__item-price 200 грн.
+                        
+                  .services__image-box.col-sm-4.col-xs-6
+                    .services__image-container
+                    img.services__image(src="images/servises/services__image_leave_the_house.jpg" alt="")
+                       .services__image-shadow
+                        .services__image-shadow__part4
+                          .services__image-shadow__part2
+                          .services__image-shadow__part4
+                          .services__image-shadow__part3                         
+                       .services__item-container
+                        span.services__item-container__inner
+                          span.services__item-content
+                            span.services__item-label на дом
+                            br
+                            span.services__item-title Выезд
+                            br
+                            span.services__item-price 150 грн.
+
+    // About
+    .ancor #about
+    .about
+      .about__header
+        .wrap
+          .about__header-title Обо мне
+      .about__body.container
+      .row
+        .about__sideba.col-sm-offset-2.col-sm-4.col-xs-12
+          .about__card
+            .about__card-box
+              img.about__card-img(src="images/about__card_avatar.jpg")          
+            .about__card-list
+              .about__card-text Мастер
+              .about__card-title Анна Хрущ
+              .about__card-label 35 лет      
+            //col-xs-offset-1
+            .about__content.col-sm-6.col-xs-12
+              .about__title Привет
+                .about__subtitle">немного обо мне:
+            
+    //advantages
+    .row
+      .dvantages.col-sm-10
+        .row          
+          .advantages__item.col-sm-4.col-sm-offset-0.col-xs-6.col-xs-offset-0
+            .class1
+              .class2.advantages__circle.advantages__circle-color1
+                span.class3
+                  span.advantages__text
+                    span.advantages__text Призовые места
+                      br в конкурсах
+                              
+          .advantages__item.col-sm-4.col-sm-offset-0.col-xs-6.col-xs-offset-0
+            .class1
+              .class2.advantages__circle-color2
+                span.class3
+                  span.advantages__text
+                    span.advantages__text-big 15
+                    br лет стажа
+              
+          .advantages__item.col-sm-4.col-sm-offset-0.col-xs-6.col-xs-offset-3
+            .class1
+              .class2.advantages__circle-color3
+                span.class3
+                  .span.advantages__text
+                    span.advantages__text Свадебные
+                      br и вечерние прически
+                                  
+        p 
+        .about__text Меня зовут Аня, я специалист в сфере парикмахерских услуг с опытом работы более 15 лет. Основное направление моей деятельности это свадебные и вечерние прически. Подтверждением моего высокого профессионального уровня являются призовые места в конкурсах и довольные клиенты.
+        <br>Я выполняю как существующие так и индивидуальные креативные работы.
+        .about__contacts
+          .about__contacts-item
+            span.about__contacts-label Телефон:
+            a.about__contacts-tel(href="tel:+380662032523">+38 (066) 203-25-23)                
+          .about__contacts-item
+            span.about__contacts-label Email:
+            a.about__contacts-email(href="mailto:info@hairstyle.com.ua">info@hairstyle.com.ua)
+          .about__contacts-item г.Киев                
+    // diploms  
+    .diploms  
+        a.diploms__item-fancybox(rel="group" href="images/diploms/diplom_1.jpg")
+          img(src="images/diploms/diplom_1_small.jpg" alt="")    
+        a.diploms__item-fancybox(rel="group" href="images/diploms/diplom_2.jpg")
+          img(src="images/diploms/diplom_2_small.jpg" alt="")    
+        a.diploms__item-fancybox(rel="group" href="images/diploms/diplom_3.jpg")
+          img(src="images/diploms/diplom_3_small.jpg" alt="")
+          
+        a.diploms__item-fancybox(rel="group" href="images/diploms/diplom_5.jpg")
+          img(src="images/diploms/diplom_5_small.jpg" alt="")
+        a.diploms__item-fancybox(rel="group" href="images/diploms/diplom_6.jpg")
+          img(src="images/diploms/diplom_6_small.jpg" alt="")
+        a.diploms__item-fancybox(rel="group" href="images/diploms/diplom_6.jpg")
+          img(src="images/diploms/diplom_6_small.jpg" alt="")
+
+    .diploms-mobile
+      .fotorama(data-ratio="500/500" data-width="100%" data-nav="thumbs" data-click="true" data-loop="true" data-keyboard='{"space": true, "home": true, "end": true, "up": true, "down":true}')    
+        a(href="images/diploms/diplom_1.jpg")
+          img(src="images/diploms/diplom_1_small.jpg" width="30" height="40")
+        a(href="images/diploms/diplom_2.jpg")
+          img(src="images/diploms/diplom_2_small.jpg" width="30" height="40")
+        a(href="images/diploms/diplom_3.jpg")
+          img(src="images/diploms/diplom_3_small.jpg" width="30" height="40")
+        a(href="images/diploms/diplom_4.jpg")
+          img(src="images/diploms/diplom_4_small.jpg" width="30" height="40")
+        a(href="images/diploms/diplom_5.jpg")
+          img(src="images/diploms/diplom_5_small.jpg" width="30" height="40")
+        a(href="images/diploms/diplom_6.jpg")
+          img(src="images/diploms/diplom_6_small.jpg" width="30" height="40")
+      
+    //footer  
+.footer
+      .divcontainer
+        .footer__feedback
+          span.footer__feedback-label Анна
+          a.footer__feedback-phone(href="tel:+380662032523">+38 (066) 203-25-23)  
+        .footer__dev
+          span.footer__box-nam Design by
+          a.footer__box-logo(href="https://www.facebook.com/dennis.putiy")
+            img(src="images/develop_logo.jpg" alt="develop_logo")
+                .footer__copyright &copy; Anna Hruch.
+                br 2015-2016г.
+      
+//jQuery (necessary for Bootstrap's JavaScript plugins)
+script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js")
+script(src="js/vendor/jquery.arcticmodal-0.3.min.js")
+
+script(src="js/vendor/jquery.smooth-scroll.js")
+script(src="fancybox/source/jquery.fancybox.pack.js")
+//Include all compiled plugins (below), or include individual files as needed
+script(src="js/bootstrap.js")
+//fotorama.css & fotorama.js.
+script(src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js")
+script(src="js/app.js")
+
+script(
+    $('#gallery__image-box').on('click', function () {
+      $('#gallery1').modal('show')
+    })
+)
+//Скролл
+script(
+  $('a').smoothScroll()
+)
