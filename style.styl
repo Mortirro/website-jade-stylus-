@@ -516,96 +516,96 @@ width: 100%
 
 /*advantages*/
 .advantages
-  margin: 0
-  margin-bottom: 5vw
+  margin 0
+  margin-bottom 5vw
 
 .advantages__text
-  display: inline-block
-  vertical-align: middle
-  max-width: 90%
-  font-size:1vw
-  line-height: 1.1
-  color: #fff
+  display inline-block
+  vertical-align middle
+  max-width 90%
+  font-size 1vw
+  line-height 1.1
+  color #fff
 
 .advantages__text-big
 	font-size:3.2vw
 
 // class1, class2, class3
 .class1
-  position:relative
-  width:100%
+  position relative
+  width 100%
 
 .class2
-  width:100%
-  border-radius: 100%
-  padding-bottom: 100%
+  width 100%
+  border-radius 100%
+  padding-bottom 100%
 
 .class3
-  position: absolute
-  top: 0
-  left: 0
-  right: 0
-  bottom: 0
-  text-align: center
-  color: #000
+  position absolute
+  top 0
+  left 0
+  right 0
+  bottom 0
+  text-align center
+  color #000
 
 .class3:after
-  content: ""
-  display: inline-block
-  vertical-align: middle
-  width: 0
-  height: 100%
+  content ""
+  display inline-block
+  vertical-align middle
+  width 0
+  height 100%
 
 .advantages__circle-color1
-  background-color: #f88b65
+  background-color #f88b65
 
 .advantages__circle-color2
-  background-color: #f15a23
+  background-color #f15a23
 
 .advantages__circle-color3
-  background-color: #ee1b24
+  background-color #ee1b24
 
 /*.diploms */
 .diploms
-  width: 940px
-  text-align:center
-  margin: 0 auto
+  width 940px
+  text-align center
+  margin 0 auto
 
 .diploms-mobile
-  display: none
+  display none
 
 .diploms:last-child
-  margin-right: 0
+  margin-right 0
 
 .diploms__item-fancybox
-  display: inline-block
-  margin-right: 10px
-  height: 201px
-  width: 142px
-  overflow: hidden
-  box-shadow: 10px 10px 10px rgba(0,0,0,0.3)
+  display inline-block
+  margin-right 10px
+  height 201px
+  width 142px
+  overflow hidden
+  box-shadow 10px 10px 10px rgba(0,0,0,0.3)
 
 
 .diploms__item-fancybox > img
-  width: 100%
-  height: 100%
-  border-radius:5px
-  box-shadow: 0 0 0 1px #fff
-  border:1px solid #eee
-  transition:all .50s ease-in-out
-  -webkit-transition:all .50s ease-in-out
-  -moz-transition:all .50s ease-in-out
-  -ms-transition:all .50s ease-in-out
+  width 100%
+  height 100%
+  border-radius 5px
+  box-shadow 0 0 0 1px #fff
+  border 1px solid #eee
+  transition all .50s ease-in-out
+  -webkit-transition all .50s ease-in-out
+  -moz-transition all .50s ease-in-out
+  -ms-transition all .50s ease-in-out
   transform-origin:50% 50%
 
 .diploms__item-fancybox:hover > img
-  transform: scale(1.2)
+  transform scale(1.2)
 
  /*footer*/
 .footer
-  margin-top: 50px
-  text-align: center
-  color: #fff
+  margin-top 50px
+  text-align center
+  color #fff
   background-color: #ee964c
   box-shadow: inset 0 10px 30px rgba(0,0,0,0.5)
 
@@ -613,18 +613,18 @@ width: 100%
   position: relative
 
 .footer__feedback
-  padding-top: 20px
-  font-size: 19px
-  font-style: italic
-  color: #fff
+  padding-top 20px
+  font-size 19px
+  font-style italic
+  color #fff
 
 .footer__feedback::before
- display: inline-block
- position: relative
+ display inline-block
+ position relative
  top 10px
  right 15px
  content ""
- background: url("../images/phone.png") no-repeat
+ background url("../images/phone.png") no-repeat
  width 32px
  height 32px
 
@@ -668,4 +668,185 @@ width: 100%
 
 .footer__copyright
   padding-top 20px
+  text-align center
+
+/*@media*/
+@media (max-width: 1366px)
+  .gallery__subtitle
+    font-size 3vw
+
+@media (max-width: 950px)
+  .diploms
+    width 600px
+
+@media (max-width: 850px)
+  .main-menu__list
+    display none
+
+ .main-menu.is-open
+ .main-menu__list
+    display block
+
+  .services__items-after::before,
+  .services__items-after::after,
+  .services__items::after,
+  .services__items::before
+    border 0
+
+@media (max-width: 768px)
+  .promo min-height: 300px
+    background url("../images/promo_full_small.jpg") center bottom no-repeat
+    background-size cover
+
+  .main-menu__toggle
+    display block
+
+  .main-menu__list
+    position absolute
+    top 100%
+    left 0
+    right 0
+    background-color: rgba(0,0,0,.7)
+    margin 0
+
+  .main-menu__list-item
+    display block
+
+
+  .main-menu__list li + li::before
+    content: none
+
+  .main-menu__list li
+    border-bottom: 1px solid rgba(255,255,255,0.2)
+
+  .header__feedback
+    position relative
+    text-align center
+    top auto
+    right auto
+    display inline-block
+    margin-top: 14px
+
+  .header__feedback-label
+    display none
+
+  .header__feedback::before
+    background url("../images/phone_small.png") no-repeat
+    top 6px
+    right: 6px
+    width: 23px
+    height: 22px
+
+  .header__feedback:hover
+    text-shadow: 1px 1px 2px #000, 0 0 1em #f00
+
+  .promo__logo__image
+    width 60%
+
+  .promo__title
+    top 200px
+    font-size 25px
+
+    .promo-logo__image
+    width: 70%
+
+.gallery
+  padding-top:180px
+
+.gallery__title
+  font-size: 11vw
+  margin-bottom: 5vw
+
+.gallery__title::after
+  width 46vw
+  height 4vw
+
+.gallery__image
+ width 100%
+ border: 1vw solid #F15A24
+
+.gallery__list-item
   text-align: center
+
+.gallery__subtitle
+ margin: 1vw auto 6vw
+ font-size 4vw
+
+/*services*/
+.services{
+  padding-top 250px
+
+.services__title
+  font-size: 11vw
+
+.services__title-inner
+  border 0.5vw solid;
+
+.services__item-label
+  font-size 4vw
+
+.services__item-title
+  font-size: 6vw
+
+.services__item-price
+  font-size: 4vw
+
+/*about*/
+.about
+  padding-top 250px
+
+.about__header
+  font-size:11vw;
+  /*line-height:1.3;*/
+
+.about__card-img
+  width: 80%;
+
+.about__card-text
+  font-size 5.5vw
+
+.about__card-title
+  font-size: 9vw
+
+.about__card-label
+  font-size: 6vw
+
+/*advantages*/
+.advantages
+  margin-bottom 10vw
+
+  .advantages__text
+  font-size 10px
+  line-height 1
+
+  .advantages__text-big
+  font-size:20px
+
+  .diploms
+    display none
+
+  .diploms-mobile
+    display block
+
+@media (max-width:760px)
+  .advantages__text
+  font-size 6vw
+
+  .advantages__text-big
+  font-size:8vw
+
+@media (max-width:560px)
+.footer__dev
+  position: relative
+  right 0
+
+@media (max-width:500px)
+  .gallery__subtitle
+    font-size 6vw
+
+@media (min-width:360px)
+.about__text
+  margin-left: 40px
+
+ .about__contacts
+  margin-left 40px
